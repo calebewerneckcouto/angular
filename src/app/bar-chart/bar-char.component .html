@@ -1,0 +1,11 @@
+<!-- bar-chart.component.html -->
+
+<!-- Importar bibliotecas necessárias -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ng2-charts@2.4.1/dist/ng2-charts.min.js"></script>
+
+<div style="display: block">
+  <canvas baseChart width="400" height="400" [datasets]="barChartData" [labels]="barChartLabels"
+    [options]="BarChartOptions" [legend]="barChartLegend" [chartType]="barChartType" [plugins]="barChartPlugins">
+  </canvas>
+</div>
